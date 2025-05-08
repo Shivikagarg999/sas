@@ -13,7 +13,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
-              TutorConnect
+              Mentoroid
             </span>
           </Link>
 
@@ -25,18 +25,18 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="/browse"
               className="text-pink-900 hover:text-rose-600 transition-colors"
             >
               Browse Tutors
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href="/login"
               className="text-pink-900 hover:text-rose-600 transition-colors"
             >
               Login
-            </Link>
+            </Link> */}
             <Link
               href="/register/tutor"
               className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
@@ -86,23 +86,17 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="/browse"
               className="block px-3 py-2 text-pink-900 hover:bg-pink-100 rounded-md"
             >
               Browse Tutors
-            </Link>
+            </Link> */}
             <Link
-              href="/login"
-              className="block px-3 py-2 text-pink-900 hover:bg-pink-100 rounded-md"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
+              href="/register/tutor"
               className="block px-3 py-2 text-white bg-gradient-to-r from-pink-500 to-rose-500 rounded-md hover:opacity-90"
             >
-              Sign Up
+              Become a Tutor
             </Link>
           </div>
         )}
