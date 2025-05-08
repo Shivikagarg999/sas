@@ -6,7 +6,7 @@ const app = express();
 connectDB(); // connect to MongoDB
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://mentoroid.vercel.app'],
   credentials: true
 }));
 
