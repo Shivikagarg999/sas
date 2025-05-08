@@ -67,14 +67,14 @@ export default function StudentRequirementForm() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:4000/api/register/student', {
+      const response = await fetch('https://sas-4xu7.onrender.com/api/register/student', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData)
       });
-
+    
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Failed to submit form');

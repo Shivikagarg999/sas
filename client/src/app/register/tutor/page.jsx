@@ -32,7 +32,7 @@ export default function TutorRegistration() {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:4000/api/tutors/register', {
+      const response = await fetch('https://sas-4xu7.onrender.com/api/tutors/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
